@@ -9,7 +9,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="introduction" />
+              <option name="title_text" value="module1" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
