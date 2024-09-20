@@ -3,65 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Lab1: jobaid</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <link href="css/jobaid.css" rel="stylesheet">	
 </head>
 
-	body {
-	background-color: #d0d5cd;   /* background color */
-	color: #444;          /* text color for the entire page */
-}
-
-	h1, h2 { 
-	text-align:center;     /* centers h1 and h2 content */
-}
-
-/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
-#wrapper {
-	width: 85%;
-	margin: 0 auto;    /* centers wrapper */
-}	
-	
-
-/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
-.stepTitle{
-	padding:10px;
-	text-align:left;
-	background-color:#F7B857;
-	font-weight: bold;
-	font-size: 150%;
- }
-	
-	
-.stepContent{ 
-	background-color: blue;
-	padding:7px;
-	display: flex;
-	flex-wrap:wrap;
-	justify-content: center;
-}
-
-.stepDescription {
-	width:40%;
-	padding:5px;
-	line-height:145%;
-}
-
-.stepImage {
-	width:40%;	
-	padding:5px;
-	text-align: left;
-}
-
-.stepImage img {
-    width:100%;
-    height:auto;
-}
-
-strong {
-  font-weight: 800;
-}
-	
-	
 <body>
 	<div id="wrapper">
   
@@ -70,12 +17,12 @@ strong {
 		  <h2>By Regina Whitaker</h2>
    	 </div>
 
-   		 <div id="step1">
+   		 <details open>
 
-			<div class="stepTitle">
+			<summary class="stepTitle">
 				Step 1: Determine the Discretionary Spending Categories
 				
-			</div>
+			</summary>
 
 			<div class="stepContent">
 
@@ -107,23 +54,27 @@ strong {
 				</ul>
 				<p>Once you've tallied the number of transactions for each category, take the top five. These will form the starting point for your discretionary budget.
 				</p>
+				<p class="warning">
+					<span class="material-icons">warning</span>
+					
+				<strong> NOTE:</strong>Your discretionary categories will vary based on your spending patterns. Review your bank statement and determine the categories in which you spend the most money.
+				</p>
 					
 			<a href="https://www.youtube.com/watch?v=MiFj4eyqbeU" target="_blank"> <strong>CLICK to View the Video</strong> on How to Utilize Bank and Credit Card Statement to create a budget</a>
 				</div>
 				
-			<div class="stepImage"><img src="img/photo1a.png" alt="Person looking at the content of a vending machine" />  
-
+			<div class="stepImage"><img src="../lab1/img/photo1a.png" alt="Person looking at the content of a vending machine" />  
 				</div>
 
 		</div><!--stepContent-->
 
-    </div><!-- close step1-->
+    </details><!-- close step1-->
 
- 	 <div id="step2">
+ 	 <details>
 
-		<div class="stepTitle">
+		<summary class="stepTitle">
 			Step 2: Determine the Budget Amount
-		</div>
+		</summary>
 
 			<div class="stepContent">
 
@@ -140,19 +91,19 @@ strong {
 				</ul>
 				</div>
 
-				<div class="stepImage"><img src="img/photo2.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo2.png" alt="Person looking at the content of a vending machine" />  
 
 				</div>
 
 		</div><!--stepContent-->
 
-    </div><!--close step2-->
+    </details><!--close step2-->
 		
-   		 <div id="step3">
+   		 <details>
 
-			<div class="stepTitle">
+			<summary class="stepTitle">
 				Step 3: Withdraw Money from Bank
-			</div>
+			</summary>
 
 			<div class="stepContent">
 
@@ -183,19 +134,19 @@ strong {
 					
 				</div>
 
-				<div class="stepImage"><img src="img/photo3.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo3.png" alt="Person looking at the content of a vending machine" />  
 
 				</div>
 
 		</div><!--stepContent-->
 
-    </div><!-- close step3-->
+    </details><!-- close step3-->
 
- 	 <div id="step4">
+ 	 <details>
 
-		<div class="stepTitle">
+		<summary class="stepTitle">
 			Step 4: Fill Envelopes with Specific Denominations
-		</div>
+		</summary>
 
 			<div class="stepContent">
 
@@ -211,22 +162,22 @@ strong {
 			<p>Count out 24 - $5 Bills and place in the Week #4 Envelope
  		</p>
 	</div>
-				<div class="stepImage"><img src="img/photo8.png" alt="Person looking at the content of a vending machine" /> 
+				<div class="stepImage"><img src="../lab1/img/photo8.png" alt="Person looking at the content of a vending machine" /> 
 				</div>
-				<div class="stepImage"><img src="img/photo6.png" alt="Person looking at the content of a vending machine" /> 
+				<div class="stepImage"><img src="../lab1/img/photo6.png" alt="Person looking at the content of a vending machine" /> 
 			</div>
-				<div class="stepImage"><img src="img/photo5.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo5.png" alt="Person looking at the content of a vending machine" />  
 			</div>
 				
 	   </div><!--stepContent-->
 
-    </div><!--close step4-->
+    </details><!--close step4-->
 		
-   		 <div id="step5">
+   		 <details>
 
-			<div class="stepTitle">
+			<summary class="stepTitle">
 				Step 5: How to Manage Money
-			</div>
+			</summary>
 
 			<div class="stepContent">
 
@@ -243,16 +194,16 @@ strong {
 					<p> Note: Remember, the money must last until your next pay period. You should not carry all the money with you. This requires discipline and a strong commitment to your budget, but it will empower you to take control of your finances.
  		</p>
 			
-				<div class="stepImage"><img src="img/photo11.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo11.png" alt="Person looking at the content of a vending machine" />  
 		</div><!--stepContent-->
 
-    </div><!--close step5-->
+    </details><!--close step5-->
 
- 	 <div id="step6">
+ 	 <details>
 
-		<div class="stepTitle">
+		<summary class="stepTitle">
 			Step 6: Savings at the End of Month
-		</div> 
+		</summary> 
 
 			<div class="stepContent">
 
@@ -270,19 +221,19 @@ strong {
 				 </p>
 			</div>	
 
-				<div class="stepImage"><img src="img/photo8.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo8.png" alt="Person looking at the content of a vending machine" />  
 
 				</div>
 
 		</div><!--stepContent-->
 
-    </div><!--close step6-->
+    </details><!--close step6-->
 		
-   		 <div id="step7">
+   		 <details>
 
-			<div class="stepTitle">
+			<summary class="stepTitle">
 				Step 7: Savings at the End of Month
-			</div>
+			</summary>
 
 			<div class="stepContent">
 
@@ -290,15 +241,12 @@ strong {
 				<p>Once a week, evaluate your spending. If the envelope is empty before your next pay period, then you are done spending it in that category. Over time, it will get easier to manage. Place any amount of money you save each week into a savings account or envelope or pay towards a bill. You will be surprised how quickly the debt goes down, and the savings go up! More importantly, you will gain a sense of security and peace through managing your money.</p>
 				</div>
 
-				<div class="stepImage"><img src="img/photo9.png" alt="Person looking at the content of a vending machine" />  
+				<div class="stepImage"><img src="../lab1/img/photo9.png" alt="Person looking at the content of a vending machine" />  
 
 				</div>
-				
-				
+			</div><!--stepContent-->
 
-		</div><!--stepContent-->
-
-    </div><!-- close step7-->
+    </details><!-- close step7-->
 
 </body>
 </html>
