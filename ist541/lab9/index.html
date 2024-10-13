@@ -5,12 +5,36 @@
 <title>lab9</title>
 
 	<link href="css/lab9.css" rel="stylesheet">
-	<script 
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script 
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
 </head>
 
 <body>
+	
+	<!--Begin Tabs -->
+	
+<div id="Tabs1">
+  <ul>
+	    <li>Water</li>
+	    <li><a href="#tabs-2">Coke</a></li>
+	    <li>Orange Juice</li>
+  </ul>
+	  <div id="tabs-1">
+	    <p>Content 1</p>
+  </div>
+	  <div id="tabs-2">
+	    <p>Content 2</p>
+  </div>
+	  <div id="tabs-3">
+	    <p>Content 3</p>
+  </div>
+</div>
+	
 	
 <div id="wrapper">
 		
@@ -18,37 +42,54 @@
  
 		<h1>What is the best drink for your health?</h1>
  
-		<h3 id="hint">Hint: Hover over the image below to find out!</h3>
-	</div>
-
-	<div id="step1">
-		
-
-		<img onmouseenter="hideAnswer()" id="coke" src="img/coke.png" />		
-	</div>	
-		
-	<div>
-		<img onmouseenter="hideAnswer()" id="orange" src="img/orange.png" />		
-	</div>
-		
-	<div>
-		<img onmouseenter="showAnswer()" id="water" src="img/water.png" />
+		<h3 id="hint">Hint: Click each image to read about the health impact of each drink!</h3>
+</div>
 	
+		<div class="stepContent">
+			
+		  	<h2 onclick="wrongAnswer1()" class="choices"> Coke </h2>
+			<h2 onclick="wrongAnswer2()" class="choices"> Orange Juice </h2>
+			<h2 onclick="rightAnswer()" class="choices"> Water </h2>
+		
+			
+	<div id="step1"> <a href="https://www.webmd.com/diet/drinking-cola-good-for-you"><img onmouseenter="hideAnswer()" id="coke" src="img/coke.png" /></a>	
+		
 	</div>	
 		
-<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
- 
+	<div> <a href="https://www.webmd.com/diet/health-benefits-orange-juice"><img onmouseenter="hideAnswer()" id="orange" src="img/orange.png" /></a>		
+	</div>
+		
+	<div> <a href="https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"><img onmouseenter="showAnswer()" id="water" src="img/water.png" /></a>
+	
+	
 </div> <!-- closing  “wrapper” -->
+			
 
-<script> 
-		
-		function showAnswer() { $("#water").show(); $("#answer").html("<h2>Correct! Water is the best thing to drink. Water is essential to hydrate the body and keeping you healthy. Water has zero calories.</h2>"); } 
-		
-		function hideAnswer() { $("#coke").hide(); 
-		$("#orange").hide(); 
-		$("#answer").html(""); 
-} 
-</script>
+<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
 	
-	</body>
+	<script>
+function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
+         $("#water").show();
+        }
+
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Coke has approximately 39 grams of sugar and 110 calories! Coke is not a healthy drink.</h2>");
+          $("#coke").hide();
+        }
+	
+	 function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Surprisingly, orange juice has alot of calories and sugar. The better option is water.</h2>");
+         $("#orange").hide();
+      }
+
+</script/>
+	
+	
+	
+</body>
 </html>
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+    
