@@ -16,23 +16,22 @@
 
 <body>
 	
-	<!--Begin Tabs -->
-	
-	
+		
 <div id="wrapper">
 		
-	<div id="header">
+<div id="header">
  
 		<h1>What is the best drink for your health?</h1>
  
 		<h3 id="hint">Hint: Click each image to read about the health impact of each drink!</h3>
 </div>
 				
-	<div id="step1"> <a href="https://www.webmd.com/diet/drinking-cola-good-for-you"><img onmouseenter="hideAnswer()" id="coke" src="img/coke.png" /></a>	
+		<div id="step1"> <a href="https://www.webmd.com/diet/drinking-cola-good-for-you"><img onmouseenter="hideAnswer()" id="coke" src="img/coke.png" /></a>	
 		
-	</div>	
+</div>	
 		
-	<div> <a href="https://www.webmd.com/diet/health-benefits-orange-juice"><img onmouseenter="hideAnswer()" id="orange" src="img/orange.png" /></a>		
+<div> <a href="https://www.webmd.com/diet/health-benefits-orange-juice"><img onmouseenter="hideAnswer()" id="orange" src="img/orange.png" /></a>		
+	
 	</div>
 		
 	<div> <a href="https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"><img onmouseenter="showAnswer()" id="water" src="img/water.png" /></a>
@@ -41,31 +40,5 @@
 </div> <!-- closing  “wrapper” -->
 			
 
-<div id="answer"></div>  <!-- This is a placeholder to display the answer-->
-	
-	<script>
-function rightAnswer(){
-         $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
-         $("#water").show();
-        }
-
-        function wrongAnswer1(){
-          $("#feedback").html("<h2 style='color:red'> Coke has approximately 39 grams of sugar and 110 calories! Coke is not a healthy drink.</h2>");
-          $("#coke").hide();
-        }
-	
-	 function wrongAnswer2(){
-         $("#feedback").html("<h2 style='color:red'> Surprisingly, orange juice has alot of calories and sugar. The better option is water.</h2>");
-         $("#orange").hide();
-      }
-
-</script/>
-	
-	
-	
 </body>
 </html>
-$(function() {
-	$( "#Tabs1" ).tabs(); 
-});
-    
