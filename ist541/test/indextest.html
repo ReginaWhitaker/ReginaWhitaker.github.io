@@ -8,6 +8,8 @@
 <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+	
+
 </head>
 
 <body>
@@ -20,6 +22,7 @@
   <li><a href="#tabs-3">Orange Juice</a></li>
   <li><a href="#tabs-4">Question</a></li>
 </ul>
+	
 <div id="tabs-1">
   <h2>&nbsp;</h2>
   <h2>BETTER HEALTH</h2>
@@ -79,9 +82,9 @@
   <h2 onClick="wrongAnswer2()" class="choices"> Orange Juice </h2>
   <h2 onClick="rightAnswer()" class="choices"> Water </h2>
 </div>
+	
+	
 <div id="feedback"></div>
-	
-	
 <script>
  	   function rightAnswer(){
          $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
