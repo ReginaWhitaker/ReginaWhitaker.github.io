@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	text-align: center;
+	background-color: #79D7DA; 
+}
+
+{
+	padding: 200px;
+	margin: 200px;
+	font-size: 125%;
+	background-color:#1C0E0E; 
+	color:#320F19;
+	flex-wrap: wrap;
+}
+
+a:hover {
+	font-size:125%;
+	background-color: #0A3167; 
+	color: #E2E2A5; 
+}
+
+step1 
+
+
+
+

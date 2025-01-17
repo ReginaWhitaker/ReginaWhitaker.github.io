@@ -1,0 +1,64 @@
+
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-color:#1F28E4;   /* background color */
+	color: #F6F6F6;          /* text color for the entire page */
+}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width: 85%;
+	margin: 0 auto;    /* centers wrapper */
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepTitle{
+	padding:10px;
+	text-align:left;
+	background-color:#100D0D;
+	font-weight: bold;
+	font-size: 150%;
+ }
+
+.stepContent{ 
+	background-color: dimgrey;
+	padding:60px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: left;
+	margin-top: 0;
+	align-items:top;
+}
+
+.stepDescription {
+	width:45%;
+	padding:45px;
+	line-height:125%;
+	font-size: 125%;
+}
+
+.stepImage {
+	width:40%;	
+	padding:5px;
+	text-align: center;
+}
+
+.stepImage img {
+    width:100%;
+    height:auto;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.warning {
+		background-color: #FBB8C4;
+		padding:10px;
+		border-radius:20px;
+	}

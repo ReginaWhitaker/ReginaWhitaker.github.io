@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+	
+
+</head>
+
+<body>
+<!--Begin Tabs -->
+
+<div id="Tabs1">
+<ul>
+  <li><a href="#tabs-1">Home</a></li>
+  <li><a href="#tabs-2">Water</a></li>
+  <li><a href="#tabs-3">Orange Juice</a></li>
+  <li><a href="#tabs-4">Question</a></li>
+</ul>
+	
+<div id="tabs-1">
+  <h2>&nbsp;</h2>
+  <h2>BETTER HEALTH</h2>
+  <h3>&nbsp;</h3>
+  <h3><img src="img/drinks.png" width="232" height="177" alt=""/></h3>
+  <h3>We often drink our calories without considering how the liquid impacts our health.</h3>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <h3>1. Click on each tab</h3>
+        <h3>2. Click on the image in each tab</h3>
+        <h3>3. Read the attached article</h3>
+        <h3>4. Click the backward arrow on your web browser to return to this page</h3>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</div>
+	
+	
+<div>
+  <h2>&nbsp;</h2>
+  <h3>&nbsp;</h3>
+  <div class="stepContent">
+    <h2 onclick="wrongAnswer1()" class="choices">&nbsp;</h2>
+  </div>
+  <div id="tabs-2">
+    <h1>WATER</h1>
+    <h2>Water is essential for life.</h2>
+    <h2>(Click) the IMAGE of the water to read an article on the benefits of drinking water.</h2>
+    <p><a href="https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"><img src="img/water.png" width="85" height="228" alt=""/></a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+	
+	
+	
+  <div id="tabs-3">
+    <h1>ORANGE JUICE</h1>
+    <h2>Orange juice has many benefits, but it is high in sugar and calories. Water is better for our bodies.</h2>
+    <h2> (Click) the orange juice image to read an article on the benefits/harm of drinking orange juice.</h2>
+    <p><a href="https://www.webmd.com/diet/health-benefits-orange-juice"><img src="img/orange.png" width="106" height="233" alt=""/></a></p>
+  </div>
+  <h1>&nbsp;</h1>
+</div>
+	
+	
+	
+<div id="tabs-4">
+<div class="stepTitle">
+  <h1>QUESTION?</h1>
+  <p><img src="img/questionmark.png" width="156" height="150" alt=""/></p>
+  <h2>What is the best drink for your health?</h2>
+</div>
+<h3>(Click) <em>EACH WORD</em> to learn which drink is best for your health.</h3>
+<div class="stepContent">
+  <h2 onClick="wrongAnswer1()" class="choices">Coke </h2>
+  <h2 onClick="wrongAnswer2()" class="choices"> Orange Juice </h2>
+  <h2 onClick="rightAnswer()" class="choices"> Water </h2>
+</div>
+	
+	
+<div id="feedback"></div>
+<script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
+         $("#water").show();
+        }
+
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Coke has approximately 39 grams of sugar and 110 calories! Coke is not a healthy drink.</h2>");
+          $("#coke").hide();
+        }
+	
+	 function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Surprisingly, orange juice has a lot of calories and sugar. The better option is water.</h2>");
+         $("#orange").hide();
+      }
+
+</script/>
+					
+	
+</body>
+</html>

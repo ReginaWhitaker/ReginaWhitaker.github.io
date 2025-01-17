@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+width: 85%;
+margin: 0 auto;
+text-align: center;
+	border-top-width: thick;
+	border-bottom-width: thick;
+	border-right-width: thick;
+	border-left-width: thick;
+	color: #131313
+}
+
+ #water {
+border: black 70% solid;
+}
+
+ #orange {
+border: black 70% solid;
+}
+
+ #coke {
+border: black 70% solid;
+}
+
+ 
+ .choices {
+cursor: pointer;
+}
+
+body {
+	background-color:#78E4DD;   /* background color */
+	color: #444;                /* text color for the page */
+}
+
+width="198" height="76" alt=""/>
+
+

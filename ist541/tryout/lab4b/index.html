@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	
+<link href="css/lab4b.css" rel="stylesheet" type="text/css">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+	
+<div id="wrapper">
+	
+	<div id="step1">
+
+		<div class="stepTitle">
+	
+			<h1>What is the best drink for you health?</h1>
+			<h3>Click on one of the following choices</h3>
+			
+		<div class="stepContent">
+		  <h2 onclick="wrongAnswer1()" class="choices"> Coke </h2>
+			<h2 onclick="wrongAnswer2()" class="choices"> Orange Juice </h2>
+			<h2 onclick="rightAnswer()" class="choices"> Water </h2>
+
+</div>
+	
+		<div id="feedback"></div>
+			
+		<div class="stepDescription"></div>
+			
+		<div class="stepImage">
+<p>  <img src="img/water.png" alt="water bottle" /></p>
+<p>&nbsp;</p>
+			<p><span class="stepContent"><a href="https://www.webmd.com/diet/ss/slideshow-drinks-and-your-health"><img src="../../../../../../Pictures/Screenshots/Screenshot 2024-10-13 013150.png" width="204" height="60" alt=""/></a></span>
+</p>
+<script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
+         $("#water").show();
+        }
+
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Coke has approximately 39 grams of sugar and 110 calories! Coke is not a healthy drink.</h2>");
+          $("#coke").hide();
+        }
+	
+	 function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Surprisingly, orange juice has alot of calories and sugar. The better option is water.</h2>");
+         $("#orange").hide();
+      }
+
+</script/>
+		
+</div><!-- END STEP ONE
+		
+
+	<div id="step2">
+
+		<div class="stepTitle">
+	
+			<h1>What is the best drink for you health?</h1>
+			<h3>Click on one of the following choices</h3>
+			
+		<div class="stepContent">
+			
+			<h2 onclick="wrongAnswer1()" class="choices"> Coke </h2>
+			<h2 onclick="wrongAnswer2()" class="choices"> Orange Juice </h2>
+			<h2 onclick="rightAnswer()" class="choices"> Water </h2>
+
+</div>
+	
+		<div id="feedback"></div>
+			
+		<div class="stepDescription"></div>
+			
+		<div class="stepImage">
+			<img src="img/water.png" alt="water bottle" /> 
+			
+			
+			
+			<script>
+ 	   function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! Water is the best drink for your health. Being hydrated is very important for your well-being. Water has zero calories.</h2>");
+         $("#water").show();
+        }
+
+        function wrongAnswer1(){
+          $("#feedback").html("<h2 style='color:red'> Coke has approximately 39 grams of sugar and 110 calories! Coke is not a healthy drink.</h2>");
+          $("#coke").hide();
+        }
+	
+	 function wrongAnswer2(){
+         $("#feedback").html("<h2 style='color:red'> Surprisingly, orange juice has alot of calories and sugar. The better option is water.</h2>");
+         $("#orange").hide();
+      }
+
+</script/>
+		
+</div><!-- END STEP ONE
+					
+				
+				
+</body>
+				
+				
+				
+
+</html>	
+              
